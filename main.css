@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: url(./assets/leaves-texture.jpg);
+    background-size: contain;
+    background-color: #008170;
+    flex: 1;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header>div {
+    border: solid 3px white;
+    margin: 100px;
+    color: white;
+    text-align: center;
+}
+
+main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-top-part,
+.main-bottom-part {
+    display: flex;
+}
