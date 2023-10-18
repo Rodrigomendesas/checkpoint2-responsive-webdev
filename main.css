@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 body {
     margin: 0;
     display: flex;
@@ -13,11 +14,24 @@ header {
     font-family: 'Libre Baskerville', serif;
 }
 
-header>div {
+header > div {
     border: solid 3px white;
     margin: 100px;
     color: white;
     text-align: center;
+}
+
+header > div > h3 {
+    font-size: 0.7rem;
+    font-weight: regular;
+}
+
+header > div > h1 {
+    font-weight: 400;
+}
+
+header .strong-text {
+    font-weight: 700;
 }
 
 main {
