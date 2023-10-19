@@ -84,14 +84,16 @@ main {
 .main-bottom-part-left {
     align-items: start;
     text-align: center;
-    background-image: url(./assets/palm-trees-line.jpg);
+    background-position: center;
+    background-image: url(./assets/lindo-ceu-com-nuvens-brancas.jpg);
     background-size: cover;
     padding: 1rem 1rem 0 1rem;
 }
 
 .main-bottom-part-right {
     justify-content: end;
-    background-image: url(./assets/leaves-reflect.jpg);
+    background-image: url(./assets/pexels-andre-william-2178028.jpg);
+    background-position: center;
     background-size: cover;
     align-items: center;
     display: flex;
@@ -105,10 +107,16 @@ main {
 
 .link-button {
     background-color: transparent;
-}
-
-.bottom-text {
     color: white;
+    border: solid 3px white;
+    border-radius: 15px;
+    padding: 1rem;
+}
+.link-button:hover {
+    background-color: white;
+    color: #008170;
+    border: solid 3px white;
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 600px) {
