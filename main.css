@@ -2,23 +2,29 @@
 
 body {
     margin: 0;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 header {
     background-image: url(./assets/leaves-texture.jpg);
-    background-size: contain;
-    background-color: #008170;
-    flex: 1;
+    background-size: cover;
+    background-color: #008170; /*A cor de fundo próxima das folhas caso a imagem não carregue*/
+    min-height: 150px;
+    max-height: 600px;
     font-family: 'Libre Baskerville', serif;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 100px 150px 100px;
+    display: flex;
 }
 
 header > div {
     border: solid 3px white;
-    margin: 100px;
     color: white;
     text-align: center;
+    padding: 10px;
 }
 
 header > div > h3 {
@@ -35,9 +41,18 @@ header .strong-text {
 }
 
 main {
-    flex: 2;
+    flex: auto;
     display: flex;
     flex-direction: column;
+    background-color: #618264;
+    padding: 15px;
+}
+
+.big-white-number {
+    color: white;
+    font-weight: 700;
+    font-size: 10rem;
+    margin: 0;
 }
 
 .main-top-part,
@@ -45,6 +60,39 @@ main {
     display: flex;
 }
 
-.main-top-part-left {
-    
+.main-top-part-left, .main-top-part-right,.main-bottom-part-left, .main-bottom-part-right {
+    flex: auto;
+    padding: 0 50px 0 50px;
+}
+
+.main-top-part-left, .main-bottom-part-left {
+    margin-right: 10px;
+}
+
+.main-bottom-part-left, .main-bottom-part-right {
+    flex: 1;
+}
+
+.main-secondary-titles {
+    margin: 0;
+}
+
+.small-black-text {
+    font-size: 0.7rem;
+}
+
+.main-bottom-part-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-bottom-part-left {
+    align-items: start;
+    background-image: url(./assets/hand-holding-leaf.png);
+
+}
+
+.main-bottom-part-right {
+    justify-content: end;
 }
