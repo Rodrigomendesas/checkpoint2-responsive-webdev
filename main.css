@@ -11,12 +11,12 @@ header {
     background-image: url(./assets/leaves-texture.jpg);
     background-size: cover;
     background-color: #008170; /*A cor de fundo próxima das folhas caso a imagem não carregue*/
-    min-height: 150px;
-    max-height: 600px;
+    min-height: 100px;
+    max-height: 300px;
     font-family: 'Libre Baskerville', serif;
     align-items: center;
     justify-content: center;
-    padding: 75px 100px 150px 100px;
+    padding: 2rem 3rem 3rem 3rem;
     display: flex;
 }
 
@@ -24,7 +24,7 @@ header > div {
     border: solid 3px white;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 0.7rem;
 }
 
 header > div > h3 {
@@ -45,28 +45,25 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #618264;
-    padding: 15px;
+}
+
+
+
+.main-top-part,
+.main-bottom-part {
+    display: flex;
+    flex: 1;
 }
 
 .big-white-number {
     color: white;
     font-weight: 700;
-    font-size: 10rem;
-    margin: 0;
+    font-size: 7rem;
+    margin: 0 0 0 1rem;
 }
 
-.main-top-part,
-.main-bottom-part {
-    display: flex;
-}
-
-.main-top-part-left, .main-top-part-right,.main-bottom-part-left, .main-bottom-part-right {
-    flex: auto;
-    padding: 0 50px 0 50px;
-}
-
-.main-top-part-left, .main-bottom-part-left {
-    margin-right: 10px;
+.main-top-part {
+    align-items: center;
 }
 
 .main-bottom-part-left, .main-bottom-part-right {
@@ -74,25 +71,48 @@ main {
 }
 
 .main-secondary-titles {
-    margin: 0;
+    margin: 0 0 0 1rem;
 }
 
 .small-black-text {
     font-size: 0.7rem;
-}
+    margin: 0 0 1rem 1rem;
+    padding-right: 8rem;
 
-.main-bottom-part-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .main-bottom-part-left {
     align-items: start;
-    background-image: url(./assets/hand-holding-leaf.png);
-
+    text-align: center;
+    background-image: url(./assets/palm-trees-line.jpg);
+    background-size: cover;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .main-bottom-part-right {
     justify-content: end;
+    background-image: url(./assets/leaves-reflect.jpg);
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+
+.medium-text {
+    color: white;
+}
+
+.link-button {
+    background-color: transparent;
+}
+
+.bottom-text {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .big-white-number {
+        display: none;
+    }
 }
